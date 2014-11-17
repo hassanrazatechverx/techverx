@@ -1,5 +1,16 @@
-<%= render @posts %>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <%= render @posts %>
 
-<% if @page %>
-	<%= render partial: "pagination" %>
-<% end %>
+  <% if @page %>
+    <%= render partial: "pagination" %>
+  <% end %>
+</div>
+<script>
+  $('li').removeClass('active');
+  $("#1blog").addClass('active');
+</script>
